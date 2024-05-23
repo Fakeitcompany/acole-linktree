@@ -1,3 +1,6 @@
+To place the logout button at the top of the page, you can insert it right after the opening `<body>` tag. Here's how you can modify the HTML to include the logout button at the top:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,6 +16,11 @@
   </head>
 
   <body>
+    <!-- Logout Button -->
+    <div id="logout" style="text-align: right; padding: 10px;">
+      <button onclick="logout()">Logout</button>
+    </div>
+
     <!-- Parallax Pixel Background Animation -->
     <section class="animated-background">
       <div id="stars1"></div>
@@ -72,11 +80,6 @@
       </a>
     </div>
 
-    <!-- Logout Button -->
-    <div id="logout">
-      <button onclick="logout()">Logout</button>
-    </div>
-
     <div id="hashtag">
       #bowling | #CTDbowling | #arrowsbowl
     </div>
@@ -86,8 +89,11 @@
         // Implement logout functionality here
         alert('You have logged out.');
         // Redirect to the login page or perform other actions as needed
-        window.location.href = 'login.html';
+        window.location.href = 'lndex.html';
       }
     </script>
   </body>
 </html>
+```
+
+In this version, the logout button is placed inside a `div` with the ID `logout`, immediately after the opening `<body>` tag. It is styled to align to the right with some padding for better appearance. The JavaScript `logout` function is also included to handle the logout logic. You can customize the function to perform necessary actions such as clearing session data or redirecting the user to a login page.
