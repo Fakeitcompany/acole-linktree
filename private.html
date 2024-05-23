@@ -13,6 +13,11 @@
   </head>
 
   <body>
+    <!-- Logout Button -->
+    <div id="logout" style="text-align: right; padding: 10px;">
+      <button onclick="logout()">Logout</button>
+    </div>
+
     <!-- Parallax Pixel Background Animation -->
     <section class="animated-background">
       <div id="stars1"></div>
@@ -64,16 +69,25 @@
       <a class="link" href="https://bio.arrowsbowl.xyz/" target="_blank">
         <i class="fa fa-play-mail">&nbsp;</i>Arrowsbowl
       </a>
-       <a class="link" href="resume.file/resume.html">
+      <a class="link" href="resume.file/resume.html">
         <i class="fa fa-play-mail">&nbsp;</i>Resume
       </a>
-        <a class="link" href="contact.html">
-          <i class="fa fa-play-mail">&nbsp;</i>Contact
-        </a>
+      <a class="link" href="contact.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Contact
+      </a>
     </div>
 
     <div id="hashtag">
       #bowling | #CTDbowling | #arrowsbowl
     </div>
+
+    <script>
+      function logout() {
+        // Implement logout functionality here
+        alert('You have logged out.');
+        // Redirect to the login page or perform other actions as needed
+        window.location.href = 'index.html';
+      }
+    </script>
   </body>
 </html>
