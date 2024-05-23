@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Protected Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            var correctPassword = 'aaroncole2024'; // Set your password here
+            if (password === correctPassword) {
+                window.location.href = 'private.html'; // Redirect to private.html
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="passwordForm">
+        <h1>Please enter the password to access this page</h1>
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+</body>
+</html>
