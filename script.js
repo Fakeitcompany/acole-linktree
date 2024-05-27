@@ -1,7 +1,8 @@
 const users = [
     { username: 'admin', password: 'City8map' },
     { username: 'users', password: 'acole123' },
-    { username: 'test', password: 'pass3' }
+    { username: 'test', password: 'pass3' },
+    { username: 'boss', password: 'pass4' }
 ];
 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
