@@ -1,6 +1,6 @@
 const users = [
     { username: 'admin', password: 'City8map' },
-    { username: 'boss', password: 'pass4' }
+    { username: 'interviewer', password: 'work2024' }
 ];
 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
