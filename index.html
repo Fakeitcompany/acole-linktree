@@ -9,49 +9,40 @@
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png">
     <!-- Core theme CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="1/style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
-            color: white; /* Added this line to change text color to white */
-            background-color: black; /* Optional: Add a background color for better contrast */
-        }
-
-        #passwordForm {
-            color: white; /* Ensure text inside the form is also white */
-        }
-
-        input[type="password"] {
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        button {
-            padding: 10px 20px;
-            margin-top: 20px;
-            cursor: pointer;
         }
     </style>
     <script>
-        function checkPassword() {
+        function checkCredentials() {
+            var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
-            var correctPassword = 'aaroncole2024'; // Set your password here
-            if (password === correctPassword) {
+            
+            var users = {
+                "test": "testing",
+                "users": "arrow_cole",
+                "Admin": "acole_bowl"
+            };
+            
+            if (users[username] && users[username] === password) {
                 window.location.href = 'private.html'; // Redirect to private.html
             } else {
-                alert('Incorrect password. Please try again.');
+                alert('Incorrect username or password. Please try again.');
             }
         }
     </script>
 </head>
 <body>
 
-    <div id="passwordForm">
-        <h1>Please enter the password to access this page</h1>
+    <div id="loginForm">
+        <h1>Please enter your credentials to access this page</h1>
+        <input type="text" id="username" placeholder="Username">
         <input type="password" id="password" placeholder="Password">
-        <button onclick="checkPassword()">Submit</button>
+        <button onclick="checkCredentials()">Submit</button>
     </div>
 
 </body>
