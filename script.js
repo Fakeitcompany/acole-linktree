@@ -16,10 +16,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     if (user) {
         messageDiv.textContent = 'Login successful!';
         messageDiv.style.color = 'green';
-        // Redirect to private.html after 1 second
-        setTimeout(() => {
             window.location.href = 'private.html';
-        }, 1000);
     } else {
         messageDiv.textContent = 'Invalid username or password!';
         messageDiv.style.color = 'red';
