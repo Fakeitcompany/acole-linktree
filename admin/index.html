@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!-- Logout Button -->
+    <div id="logout" style="text-align: right; padding: 10px;">
+      <button onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
+
+    <a id="profilePicture" href="#popup">
+      <img src="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png" target="_blank">
+            <img src="https://arrowcole121.github.io/Acole-Works/pictures/pictures2.png" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          16 | They/Them | Arrow | CTD Junior Regonal Staff Member.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
+      </div>
+    </div>
+
+    <div id="userName">
+      @Arrow_Cole
+    </div>
+
+    <div id="links">
+      <h2>Home Page</h2>
+          <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/script.js">
+        <i class="fa fa-play-mail">&nbsp;</i>script.js
+      </a>
+         <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/private.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Private.html
+      </a>
+         <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/index.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Index.html
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/style.css">
+        <i class="fa fa-play-mail">&nbsp;</i>Style.css
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/styles.css">
+        <i class="fa fa-play-mail">&nbsp;</i>Styles.css
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/testing.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Testing.html
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/arrowsbowl.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Arrowsbowl.html
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/blob/master/contact.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Contact.html
+      </a>
+      <h2>Resume.file Home Page</h2>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/tree/master/resume.file/contact.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Contact.html
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/tree/master/resume.file/index.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Index.html
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/tree/master/resume.file/resume.html">
+        <i class="fa fa-play-mail">&nbsp;</i>Resume.html
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/tree/master/resume.file/script.js">
+        <i class="fa fa-play-mail">&nbsp;</i>Script.js
+      </a>
+       <a class="link" href="https://github.com/arrowcole121/acole-linktree/tree/master/resume.file/styles.css">
+        <i class="fa fa-play-mail">&nbsp;</i>Styles.css
+      </a>
+    </div>
+
+    <div id="hashtag">
+      #bowling | #CTDbowling | #arrowsbowl
+    </div>
+
+    <script>
+      function logout() {
+        // Implement logout functionality here
+        alert('You have logged out.');
+        // Redirect to the login page or perform other actions as needed
+        window.location.href = 'index.html';
+      }
+    </script>
+  </body>
+</html>
