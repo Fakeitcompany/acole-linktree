@@ -1,8 +1,5 @@
 const users = [
-    { username: 'admin', password: 'City8map', access: ['*'] },
-    { username: 'users', password: 'acole123', access: ['*'] },
-    { username: 'test', password: 'test12321', access: ['testing.html'] },
-    { username: 'interviewer', password: 'work2024', access: ['resume.file/resume.html'] }
+    { username: 'admin', password: 'City8map', access: ['*'] }
 ];
 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
@@ -18,12 +15,6 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         messageDiv.textContent = 'Login successful!';
         messageDiv.style.color = 'green';
 
-        // Check if the user is 'interviewer' to redirect accordingly
-        if (username === 'interviewer') {
-            // Redirect to specific pages
-            window.location.href = 'resume.file/resume.html';
-             } else if (username === 'admin') {
-            window.location.href = 'admin/index.html';
         } else {
             // For other users, redirect to a generic private page
             window.location.href = 'private.html';
