@@ -1,7 +1,7 @@
 const users = [
     { username: 'admin', password: 'City8map', access: ['*'] },
-    { username: 'users', password: 'acole123', access: ['*'] },
-    { username: 'test', password: 'test12321', access: ['testing.html'] },
+    { username: 'user', password: 'acole123', access: ['*'] },
+    { username: 'Aaron', password: '', access: ['*'] },
     { username: 'interviewer', password: 'work2024', access: ['resume.file/resume.html'] }
 ];
 
