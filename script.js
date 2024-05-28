@@ -1,7 +1,7 @@
 const users = [
     { username: 'admin', password: 'City8map', access: ['*'] },
     { username: 'users', password: 'acole123', access: ['*'] },
-    { username: 'test', password: 'testpassword', access: ['testing.html'] },
+    { username: 'test', password: 'test12321', access: ['testing.html'] },
     { username: 'boss', password: 'pass4', access: ['*'] },
     { username: 'interviewer', password: 'work2024', access: ['resume.file/resume.html'] }
 ];
@@ -23,8 +23,8 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         if (username === 'interviewer') {
             // Redirect to specific pages
             window.location.href = 'resume.file/resume.html';
-      
-    
+             } else if (username === 'test') {
+            window.location.href = 'testing.html';
         } else {
             // For other users, redirect to a generic private page
             window.location.href = 'private.html';
