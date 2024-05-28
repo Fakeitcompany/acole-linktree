@@ -44,25 +44,6 @@ a.link:hover {
   overflow: hidden;
 }
 
-#stars1, #stars2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background: transparent;
-  opacity: 0.4;
-}
-
-#stars1 {
-  background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
-  animation: animateStars 50s linear infinite;
-}
-
-#stars2 {
-  background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
-  animation: animateStars 100s linear infinite;
-}
 
 @keyframes animateStars {
   0% {
