@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
 
         } else {
             // For other users, redirect to a generic private page
-            window.location.href = 'private.html';
+            window.location.href = 'index.html';
         }
     } else {
         messageDiv.textContent = 'Invalid username or password!';
