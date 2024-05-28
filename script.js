@@ -23,7 +23,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
             // Redirect to specific pages
             window.location.href = 'resume.file/resume.html';
              } else if (username === 'admin') {
-            window.location.href = 'admin.html';
+            window.location.href = 'admin/index.html';
         } else {
             // For other users, redirect to a generic private page
             window.location.href = 'private.html';
