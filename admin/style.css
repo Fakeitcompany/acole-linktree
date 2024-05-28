@@ -44,7 +44,7 @@ a.link:hover {
   overflow: hidden;
 }
 
-#stars1, #stars2, #stars3 {
+#stars1, #stars2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -60,13 +60,8 @@ a.link:hover {
 }
 
 #stars2 {
-  background: url('https://www.transparenttextures.com/patterns/tiny-grid.png') repeat;
-  animation: animateStars 100s linear infinite;
-}
-
-#stars3 {
   background: url('https://www.transparenttextures.com/patterns/asfalt-light.png') repeat;
-  animation: animateStars 150s linear infinite;
+  animation: animateStars 100s linear infinite;
 }
 
 @keyframes animateStars {
