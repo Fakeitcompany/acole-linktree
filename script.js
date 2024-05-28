@@ -2,8 +2,7 @@ const users = [
     { username: 'admin', password: 'City8map', access: ['*'] },
     { username: 'users', password: 'acole123', access: ['*'] },
     { username: 'test', password: 'test12321', access: ['testing.html'] },
-    { username: 'interviewer', password: 'work2024', access: ['resume.file/resume.html'] };
-    { username: 'aaron', password:'aaronya5', access: ['*'] }
+    { username: 'interviewer', password: 'work2024', access: ['resume.file/resume.html'] }
 ];
 
 document.getElementById('loginForm').addEventListener('submit', function (e) {
