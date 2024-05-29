@@ -21,13 +21,14 @@ a.link:hover {
   color: #ff4081;
 }
 
-/* Logout Button */
-#logout {
+/* Button Container */
+#buttons {
   text-align: right;
   padding: 10px;
 }
 
-#logout button {
+/* Buttons Styling */
+#buttons button {
   background-color: #ff4081;
   color: #ffffff;
   border: none;
@@ -35,9 +36,10 @@ a.link:hover {
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-left: 10px; /* Add space between buttons */
 }
 
-#logout button:hover {
+#buttons button:hover {
   background-color: #e91e63;
 }
 
