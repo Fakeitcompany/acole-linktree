@@ -30,6 +30,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         }
     } else {
         messageDiv.textContent = 'Invalid username or password!';
+        messageDiv.textContent = 'Please try Again!';
         messageDiv.style.color = 'red';
     }
 });
